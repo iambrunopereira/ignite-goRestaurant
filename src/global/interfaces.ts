@@ -1,4 +1,4 @@
-export interface FoodProps {
+export interface IFoodPlate {
   id: number;
   name: string;
   description: string;
@@ -6,3 +6,5 @@ export interface FoodProps {
   available: boolean;
   image: string;
 }
+
+export type IOperationFoodData = Omit<IFoodPlate, 'id' | 'available'>
